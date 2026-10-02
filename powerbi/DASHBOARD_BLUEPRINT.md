@@ -1,76 +1,73 @@
-# Power BI Dashboard Blueprint
+# Power BI dashboard notes
 
-## Page 1 — Executive Overview
+The report is arranged in the same order I would review the data: start with the overall position, then move to the feeders and assets causing the operational questions.
 
-**KPI cards**
-- Total Input Energy
-- Energy Loss %
-- Collection Efficiency %
-- Outage Count
-- Customers Affected
+## 1. Overview
 
-**Visuals**
-1. Monthly energy loss % line chart
-2. Division-wise loss % column chart
-3. Division-wise collection efficiency
-4. Top 5 high-loss feeders table
+**Question:** How are losses, reliability and collections moving overall?
 
-**Slicers**
-- Month
-- Division
-- Zone
+Start with:
 
----
+- Total input energy
+- Total billed energy
+- Energy loss %
+- Collection efficiency %
+- Outage count
+- Customers affected
 
-## Page 2 — Feeder Loss Analytics
+Useful views:
 
-**Visuals**
-1. Feeder loss ranking
-2. Input vs billed energy by feeder
-3. Monthly loss trend
-4. High-loss months by feeder
-5. Division and zone drill-down
+- monthly loss %
+- loss % by division
+- billed vs collected revenue
+- top feeders by average loss
 
-**Suggested interaction**
-Select a feeder to cross-filter the trend and supporting KPIs.
+Filters: month, division and zone.
 
----
+## 2. Feeder loss
 
-## Page 3 — Reliability & Asset Performance
+**Question:** Which feeders need a closer look?
 
-**Visuals**
-1. Outages by month
-2. Outage reason contribution
-3. Customers affected by reason
-4. Transformer loading distribution
-5. Feeder-wise outage table
+Use:
 
-**Operational flags**
-- Transformer loading >= 85%
-- High outage frequency
-- Long average outage duration
+- feeder loss ranking
+- input vs billed energy
+- monthly loss trend
+- number of months above the 12% review line
 
----
+A feeder should not be flagged because of one unusual month. The recurring-loss view is there to separate a persistent pattern from a one-off spike.
 
-## Page 4 — Revenue & Collection
+## 3. Reliability and assets
 
-**Visuals**
-1. Monthly billed vs collected revenue
-2. Collection efficiency by division
-3. Collection gap by consumer segment
-4. Consumer segment contribution
-5. Meter route performance
+**Question:** Where are outages and high loading concentrated?
 
-**Business questions**
-- Where is the collection gap concentrated?
-- Which consumer segments have lower collection efficiency?
-- Is collection efficiency improving month over month?
+Use:
 
-## Design notes
+- outage count
+- average outage duration
+- customers affected
+- outage reason
+- transformer loading
 
-Keep the dashboard management-friendly:
-- Start with KPI cards.
-- Use consistent month and division filters.
-- Avoid excessive charts.
-- Show the underlying table for operational follow-up.
-- Add tooltips with feeder, division and KPI context.
+Show the feeder table alongside the charts so an operational user can move from the summary to the actual feeder.
+
+For this portfolio, 85% transformer loading is treated as a review threshold, not as a utility standard.
+
+## 4. Revenue and collection
+
+**Question:** Where is billed revenue not being collected?
+
+Use:
+
+- billed vs collected trend
+- collection efficiency by division
+- collection gap by consumer segment
+- collection gap by meter route
+
+The dashboard should make it possible to move from a division-level gap to the consumer segment or route behind it.
+
+## Layout
+
+Keep the first page simple. Use the other pages for investigation.
+
+Avoid filling the report with gauges. A trend, a ranking and a supporting table usually give more context for these questions.
