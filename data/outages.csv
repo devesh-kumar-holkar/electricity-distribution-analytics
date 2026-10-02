@@ -1,0 +1,241 @@
+outage_id,outage_date,feeder_id,division,reason,duration_minutes,customers_affected,outage_type
+O0001,2025-01-04,F001,Agra Urban,Cable Fault,52,123,Unplanned
+O0002,2025-02-07,F002,Agra Rural,Cable Fault,69,185,Unplanned
+O0003,2025-03-10,F003,Mathura,Cable Fault,86,247,Unplanned
+O0004,2025-04-13,F004,Aligarh,Cable Fault,103,309,Unplanned
+O0005,2025-05-16,F005,Agra Urban,Cable Fault,120,371,Unplanned
+O0006,2025-06-19,F006,Agra Rural,Cable Fault,137,433,Unplanned
+O0007,2025-07-22,F007,Mathura,Cable Fault,154,495,Unplanned
+O0008,2025-08-25,F008,Aligarh,Cable Fault,171,557,Unplanned
+O0009,2025-09-01,F009,Agra Urban,Cable Fault,188,619,Unplanned
+O0010,2025-10-04,F010,Agra Rural,Cable Fault,35,681,Unplanned
+O0011,2025-11-07,F011,Mathura,Cable Fault,52,743,Unplanned
+O0012,2025-12-10,F012,Aligarh,Cable Fault,69,85,Unplanned
+O0013,2025-01-13,F001,Agra Urban,Cable Fault,86,639,Unplanned
+O0014,2025-02-16,F002,Agra Rural,Cable Fault,103,701,Unplanned
+O0015,2025-03-19,F003,Mathura,Cable Fault,120,763,Unplanned
+O0016,2025-04-22,F004,Aligarh,Cable Fault,137,105,Unplanned
+O0017,2025-05-25,F005,Agra Urban,Cable Fault,154,167,Unplanned
+O0018,2025-06-01,F006,Agra Rural,Cable Fault,171,229,Unplanned
+O0019,2025-07-04,F007,Mathura,Cable Fault,188,291,Unplanned
+O0020,2025-08-07,F008,Aligarh,Cable Fault,35,353,Unplanned
+O0021,2025-09-10,F009,Agra Urban,Cable Fault,52,415,Unplanned
+O0022,2025-10-13,F010,Agra Rural,Cable Fault,69,477,Unplanned
+O0023,2025-11-16,F011,Mathura,Cable Fault,86,539,Unplanned
+O0024,2025-12-19,F012,Aligarh,Cable Fault,103,601,Unplanned
+O0025,2025-01-22,F001,Agra Urban,Cable Fault,120,435,Unplanned
+O0026,2025-02-25,F002,Agra Rural,Cable Fault,137,497,Unplanned
+O0027,2025-03-01,F003,Mathura,Cable Fault,154,559,Unplanned
+O0028,2025-04-04,F004,Aligarh,Cable Fault,171,621,Unplanned
+O0029,2025-05-07,F005,Agra Urban,Cable Fault,188,683,Unplanned
+O0030,2025-06-10,F006,Agra Rural,Cable Fault,35,745,Unplanned
+O0031,2025-07-13,F007,Mathura,Cable Fault,52,87,Unplanned
+O0032,2025-08-16,F008,Aligarh,Cable Fault,69,149,Unplanned
+O0033,2025-09-19,F009,Agra Urban,Cable Fault,86,211,Unplanned
+O0034,2025-10-22,F010,Agra Rural,Cable Fault,103,273,Unplanned
+O0035,2025-11-25,F011,Mathura,Cable Fault,120,335,Unplanned
+O0036,2025-12-01,F012,Aligarh,Cable Fault,137,397,Unplanned
+O0037,2025-01-04,F001,Agra Urban,Cable Fault,154,231,Unplanned
+O0038,2025-02-07,F002,Agra Rural,Cable Fault,171,293,Unplanned
+O0039,2025-03-10,F003,Mathura,Cable Fault,188,355,Unplanned
+O0040,2025-04-13,F004,Aligarh,Cable Fault,35,417,Unplanned
+O0041,2025-05-16,F005,Agra Urban,Cable Fault,52,479,Unplanned
+O0042,2025-06-19,F006,Agra Rural,Cable Fault,69,541,Unplanned
+O0043,2025-07-22,F007,Mathura,Cable Fault,86,603,Unplanned
+O0044,2025-08-25,F008,Aligarh,Cable Fault,103,665,Unplanned
+O0045,2025-09-01,F009,Agra Urban,Cable Fault,120,727,Unplanned
+O0046,2025-10-04,F010,Agra Rural,Cable Fault,137,789,Unplanned
+O0047,2025-11-07,F011,Mathura,Cable Fault,154,131,Unplanned
+O0048,2025-12-10,F012,Aligarh,Cable Fault,171,193,Unplanned
+O0049,2025-01-13,F001,Agra Urban,Cable Fault,188,747,Unplanned
+O0050,2025-02-16,F002,Agra Rural,Cable Fault,35,89,Unplanned
+O0051,2025-03-19,F003,Mathura,Cable Fault,52,151,Unplanned
+O0052,2025-04-22,F004,Aligarh,Cable Fault,69,213,Unplanned
+O0053,2025-05-25,F005,Agra Urban,Cable Fault,86,275,Unplanned
+O0054,2025-06-01,F006,Agra Rural,Cable Fault,103,337,Unplanned
+O0055,2025-07-04,F007,Mathura,Cable Fault,120,399,Unplanned
+O0056,2025-08-07,F008,Aligarh,Cable Fault,137,461,Unplanned
+O0057,2025-09-10,F009,Agra Urban,Cable Fault,154,523,Unplanned
+O0058,2025-10-13,F010,Agra Rural,Cable Fault,171,585,Unplanned
+O0059,2025-11-16,F011,Mathura,Cable Fault,188,647,Unplanned
+O0060,2025-12-19,F012,Aligarh,Cable Fault,35,709,Unplanned
+O0061,2025-01-22,F001,Agra Urban,Cable Fault,52,543,Unplanned
+O0062,2025-02-25,F002,Agra Rural,Cable Fault,69,605,Unplanned
+O0063,2025-03-01,F003,Mathura,Cable Fault,86,667,Unplanned
+O0064,2025-04-04,F004,Aligarh,Cable Fault,103,729,Unplanned
+O0065,2025-05-07,F005,Agra Urban,Cable Fault,120,791,Unplanned
+O0066,2025-06-10,F006,Agra Rural,Cable Fault,137,133,Unplanned
+O0067,2025-07-13,F007,Mathura,Cable Fault,154,195,Unplanned
+O0068,2025-08-16,F008,Aligarh,Cable Fault,171,257,Unplanned
+O0069,2025-09-19,F009,Agra Urban,Cable Fault,188,319,Unplanned
+O0070,2025-10-22,F010,Agra Rural,Cable Fault,35,381,Unplanned
+O0071,2025-11-25,F011,Mathura,Cable Fault,52,443,Unplanned
+O0072,2025-12-01,F012,Aligarh,Cable Fault,69,505,Unplanned
+O0073,2025-01-04,F001,Agra Urban,Cable Fault,86,339,Unplanned
+O0074,2025-02-07,F002,Agra Rural,Cable Fault,103,401,Unplanned
+O0075,2025-03-10,F003,Mathura,Cable Fault,120,463,Unplanned
+O0076,2025-04-13,F004,Aligarh,Cable Fault,137,525,Unplanned
+O0077,2025-05-16,F005,Agra Urban,Cable Fault,154,587,Unplanned
+O0078,2025-06-19,F006,Agra Rural,Cable Fault,171,649,Unplanned
+O0079,2025-07-22,F007,Mathura,Cable Fault,188,711,Unplanned
+O0080,2025-08-25,F008,Aligarh,Cable Fault,35,773,Unplanned
+O0081,2025-09-01,F009,Agra Urban,Cable Fault,52,115,Unplanned
+O0082,2025-10-04,F010,Agra Rural,Cable Fault,69,177,Unplanned
+O0083,2025-11-07,F011,Mathura,Cable Fault,86,239,Unplanned
+O0084,2025-12-10,F012,Aligarh,Cable Fault,103,301,Unplanned
+O0085,2025-01-13,F001,Agra Urban,Cable Fault,120,135,Unplanned
+O0086,2025-02-16,F002,Agra Rural,Cable Fault,137,197,Unplanned
+O0087,2025-03-19,F003,Mathura,Cable Fault,154,259,Unplanned
+O0088,2025-04-22,F004,Aligarh,Cable Fault,171,321,Unplanned
+O0089,2025-05-25,F005,Agra Urban,Cable Fault,188,383,Unplanned
+O0090,2025-06-01,F006,Agra Rural,Cable Fault,35,445,Unplanned
+O0091,2025-07-04,F007,Mathura,Cable Fault,52,507,Unplanned
+O0092,2025-08-07,F008,Aligarh,Cable Fault,69,569,Unplanned
+O0093,2025-09-10,F009,Agra Urban,Cable Fault,86,631,Unplanned
+O0094,2025-10-13,F010,Agra Rural,Cable Fault,103,693,Unplanned
+O0095,2025-11-16,F011,Mathura,Cable Fault,120,755,Unplanned
+O0096,2025-12-19,F012,Aligarh,Cable Fault,137,97,Unplanned
+O0097,2025-01-22,F001,Agra Urban,Cable Fault,154,651,Unplanned
+O0098,2025-02-25,F002,Agra Rural,Cable Fault,171,713,Unplanned
+O0099,2025-03-01,F003,Mathura,Cable Fault,188,775,Unplanned
+O0100,2025-04-04,F004,Aligarh,Cable Fault,35,117,Unplanned
+O0101,2025-05-07,F005,Agra Urban,Cable Fault,52,179,Unplanned
+O0102,2025-06-10,F006,Agra Rural,Cable Fault,69,241,Unplanned
+O0103,2025-07-13,F007,Mathura,Cable Fault,86,303,Unplanned
+O0104,2025-08-16,F008,Aligarh,Cable Fault,103,365,Unplanned
+O0105,2025-09-19,F009,Agra Urban,Cable Fault,120,427,Unplanned
+O0106,2025-10-22,F010,Agra Rural,Cable Fault,137,489,Unplanned
+O0107,2025-11-25,F011,Mathura,Cable Fault,154,551,Unplanned
+O0108,2025-12-01,F012,Aligarh,Cable Fault,171,613,Unplanned
+O0109,2025-01-04,F001,Agra Urban,Cable Fault,188,447,Unplanned
+O0110,2025-02-07,F002,Agra Rural,Cable Fault,35,509,Unplanned
+O0111,2025-03-10,F003,Mathura,Cable Fault,52,571,Unplanned
+O0112,2025-04-13,F004,Aligarh,Cable Fault,69,633,Unplanned
+O0113,2025-05-16,F005,Agra Urban,Cable Fault,86,695,Unplanned
+O0114,2025-06-19,F006,Agra Rural,Cable Fault,103,757,Unplanned
+O0115,2025-07-22,F007,Mathura,Cable Fault,120,99,Unplanned
+O0116,2025-08-25,F008,Aligarh,Cable Fault,137,161,Unplanned
+O0117,2025-09-01,F009,Agra Urban,Cable Fault,154,223,Unplanned
+O0118,2025-10-04,F010,Agra Rural,Cable Fault,171,285,Unplanned
+O0119,2025-11-07,F011,Mathura,Cable Fault,188,347,Unplanned
+O0120,2025-12-10,F012,Aligarh,Cable Fault,35,409,Unplanned
+O0121,2025-01-13,F001,Agra Urban,Cable Fault,52,243,Unplanned
+O0122,2025-02-16,F002,Agra Rural,Cable Fault,69,305,Unplanned
+O0123,2025-03-19,F003,Mathura,Cable Fault,86,367,Unplanned
+O0124,2025-04-22,F004,Aligarh,Cable Fault,103,429,Unplanned
+O0125,2025-05-25,F005,Agra Urban,Cable Fault,120,491,Unplanned
+O0126,2025-06-01,F006,Agra Rural,Cable Fault,137,553,Unplanned
+O0127,2025-07-04,F007,Mathura,Cable Fault,154,615,Unplanned
+O0128,2025-08-07,F008,Aligarh,Cable Fault,171,677,Unplanned
+O0129,2025-09-10,F009,Agra Urban,Cable Fault,188,739,Unplanned
+O0130,2025-10-13,F010,Agra Rural,Cable Fault,35,81,Unplanned
+O0131,2025-11-16,F011,Mathura,Cable Fault,52,143,Unplanned
+O0132,2025-12-19,F012,Aligarh,Cable Fault,69,205,Unplanned
+O0133,2025-01-22,F001,Agra Urban,Cable Fault,86,759,Unplanned
+O0134,2025-02-25,F002,Agra Rural,Cable Fault,103,101,Unplanned
+O0135,2025-03-01,F003,Mathura,Cable Fault,120,163,Unplanned
+O0136,2025-04-04,F004,Aligarh,Cable Fault,137,225,Unplanned
+O0137,2025-05-07,F005,Agra Urban,Cable Fault,154,287,Unplanned
+O0138,2025-06-10,F006,Agra Rural,Cable Fault,171,349,Unplanned
+O0139,2025-07-13,F007,Mathura,Cable Fault,188,411,Unplanned
+O0140,2025-08-16,F008,Aligarh,Cable Fault,35,473,Unplanned
+O0141,2025-09-19,F009,Agra Urban,Cable Fault,52,535,Unplanned
+O0142,2025-10-22,F010,Agra Rural,Cable Fault,69,597,Unplanned
+O0143,2025-11-25,F011,Mathura,Cable Fault,86,659,Unplanned
+O0144,2025-12-01,F012,Aligarh,Cable Fault,103,721,Unplanned
+O0145,2025-01-04,F001,Agra Urban,Cable Fault,120,555,Unplanned
+O0146,2025-02-07,F002,Agra Rural,Cable Fault,137,617,Unplanned
+O0147,2025-03-10,F003,Mathura,Cable Fault,154,679,Unplanned
+O0148,2025-04-13,F004,Aligarh,Cable Fault,171,741,Unplanned
+O0149,2025-05-16,F005,Agra Urban,Cable Fault,188,83,Unplanned
+O0150,2025-06-19,F006,Agra Rural,Cable Fault,35,145,Unplanned
+O0151,2025-07-22,F007,Mathura,Cable Fault,52,207,Unplanned
+O0152,2025-08-25,F008,Aligarh,Cable Fault,69,269,Unplanned
+O0153,2025-09-01,F009,Agra Urban,Cable Fault,86,331,Unplanned
+O0154,2025-10-04,F010,Agra Rural,Cable Fault,103,393,Unplanned
+O0155,2025-11-07,F011,Mathura,Cable Fault,120,455,Unplanned
+O0156,2025-12-10,F012,Aligarh,Cable Fault,137,517,Unplanned
+O0157,2025-01-13,F001,Agra Urban,Cable Fault,154,351,Unplanned
+O0158,2025-02-16,F002,Agra Rural,Cable Fault,171,413,Unplanned
+O0159,2025-03-19,F003,Mathura,Cable Fault,188,475,Unplanned
+O0160,2025-04-22,F004,Aligarh,Cable Fault,35,537,Unplanned
+O0161,2025-05-25,F005,Agra Urban,Cable Fault,52,599,Unplanned
+O0162,2025-06-01,F006,Agra Rural,Cable Fault,69,661,Unplanned
+O0163,2025-07-04,F007,Mathura,Cable Fault,86,723,Unplanned
+O0164,2025-08-07,F008,Aligarh,Cable Fault,103,785,Unplanned
+O0165,2025-09-10,F009,Agra Urban,Cable Fault,120,127,Unplanned
+O0166,2025-10-13,F010,Agra Rural,Cable Fault,137,189,Unplanned
+O0167,2025-11-16,F011,Mathura,Cable Fault,154,251,Unplanned
+O0168,2025-12-19,F012,Aligarh,Cable Fault,171,313,Unplanned
+O0169,2025-01-22,F001,Agra Urban,Cable Fault,188,147,Unplanned
+O0170,2025-02-25,F002,Agra Rural,Cable Fault,35,209,Unplanned
+O0171,2025-03-01,F003,Mathura,Cable Fault,52,271,Unplanned
+O0172,2025-04-04,F004,Aligarh,Cable Fault,69,333,Unplanned
+O0173,2025-05-07,F005,Agra Urban,Cable Fault,86,395,Unplanned
+O0174,2025-06-10,F006,Agra Rural,Cable Fault,103,457,Unplanned
+O0175,2025-07-13,F007,Mathura,Cable Fault,120,519,Unplanned
+O0176,2025-08-16,F008,Aligarh,Cable Fault,137,581,Unplanned
+O0177,2025-09-19,F009,Agra Urban,Cable Fault,154,643,Unplanned
+O0178,2025-10-22,F010,Agra Rural,Cable Fault,171,705,Unplanned
+O0179,2025-11-25,F011,Mathura,Cable Fault,188,767,Unplanned
+O0180,2025-12-01,F012,Aligarh,Cable Fault,35,109,Unplanned
+O0181,2025-01-04,F001,Agra Urban,Cable Fault,52,663,Unplanned
+O0182,2025-02-07,F002,Agra Rural,Cable Fault,69,725,Unplanned
+O0183,2025-03-10,F003,Mathura,Cable Fault,86,787,Unplanned
+O0184,2025-04-13,F004,Aligarh,Cable Fault,103,129,Unplanned
+O0185,2025-05-16,F005,Agra Urban,Cable Fault,120,191,Unplanned
+O0186,2025-06-19,F006,Agra Rural,Cable Fault,137,253,Unplanned
+O0187,2025-07-22,F007,Mathura,Cable Fault,154,315,Unplanned
+O0188,2025-08-25,F008,Aligarh,Cable Fault,171,377,Unplanned
+O0189,2025-09-01,F009,Agra Urban,Cable Fault,188,439,Unplanned
+O0190,2025-10-04,F010,Agra Rural,Cable Fault,35,501,Unplanned
+O0191,2025-11-07,F011,Mathura,Cable Fault,52,563,Unplanned
+O0192,2025-12-10,F012,Aligarh,Cable Fault,69,625,Unplanned
+O0193,2025-01-13,F001,Agra Urban,Cable Fault,86,459,Unplanned
+O0194,2025-02-16,F002,Agra Rural,Cable Fault,103,521,Unplanned
+O0195,2025-03-19,F003,Mathura,Cable Fault,120,583,Unplanned
+O0196,2025-04-22,F004,Aligarh,Cable Fault,137,645,Unplanned
+O0197,2025-05-25,F005,Agra Urban,Cable Fault,154,707,Unplanned
+O0198,2025-06-01,F006,Agra Rural,Cable Fault,171,769,Unplanned
+O0199,2025-07-04,F007,Mathura,Cable Fault,188,111,Unplanned
+O0200,2025-08-07,F008,Aligarh,Cable Fault,35,173,Unplanned
+O0201,2025-09-10,F009,Agra Urban,Cable Fault,52,235,Unplanned
+O0202,2025-10-13,F010,Agra Rural,Cable Fault,69,297,Unplanned
+O0203,2025-11-16,F011,Mathura,Cable Fault,86,359,Unplanned
+O0204,2025-12-19,F012,Aligarh,Cable Fault,103,421,Unplanned
+O0205,2025-01-22,F001,Agra Urban,Cable Fault,120,255,Unplanned
+O0206,2025-02-25,F002,Agra Rural,Cable Fault,137,317,Unplanned
+O0207,2025-03-01,F003,Mathura,Cable Fault,154,379,Unplanned
+O0208,2025-04-04,F004,Aligarh,Cable Fault,171,441,Unplanned
+O0209,2025-05-07,F005,Agra Urban,Cable Fault,188,503,Unplanned
+O0210,2025-06-10,F006,Agra Rural,Cable Fault,35,565,Unplanned
+O0211,2025-07-13,F007,Mathura,Cable Fault,52,627,Unplanned
+O0212,2025-08-16,F008,Aligarh,Cable Fault,69,689,Unplanned
+O0213,2025-09-19,F009,Agra Urban,Cable Fault,86,751,Unplanned
+O0214,2025-10-22,F010,Agra Rural,Cable Fault,103,93,Unplanned
+O0215,2025-11-25,F011,Mathura,Cable Fault,120,155,Unplanned
+O0216,2025-12-01,F012,Aligarh,Cable Fault,137,217,Unplanned
+O0217,2025-01-04,F001,Agra Urban,Cable Fault,154,771,Unplanned
+O0218,2025-02-07,F002,Agra Rural,Cable Fault,171,113,Unplanned
+O0219,2025-03-10,F003,Mathura,Cable Fault,188,175,Unplanned
+O0220,2025-04-13,F004,Aligarh,Cable Fault,35,237,Unplanned
+O0221,2025-05-16,F005,Agra Urban,Cable Fault,52,299,Unplanned
+O0222,2025-06-19,F006,Agra Rural,Cable Fault,69,361,Unplanned
+O0223,2025-07-22,F007,Mathura,Cable Fault,86,423,Unplanned
+O0224,2025-08-25,F008,Aligarh,Cable Fault,103,485,Unplanned
+O0225,2025-09-01,F009,Agra Urban,Cable Fault,120,547,Unplanned
+O0226,2025-10-04,F010,Agra Rural,Cable Fault,137,609,Unplanned
+O0227,2025-11-07,F011,Mathura,Cable Fault,154,671,Unplanned
+O0228,2025-12-10,F012,Aligarh,Cable Fault,171,733,Unplanned
+O0229,2025-01-13,F001,Agra Urban,Cable Fault,188,567,Unplanned
+O0230,2025-02-16,F002,Agra Rural,Cable Fault,35,629,Unplanned
+O0231,2025-03-19,F003,Mathura,Cable Fault,52,691,Unplanned
+O0232,2025-04-22,F004,Aligarh,Cable Fault,69,753,Unplanned
+O0233,2025-05-25,F005,Agra Urban,Cable Fault,86,95,Unplanned
+O0234,2025-06-01,F006,Agra Rural,Cable Fault,103,157,Unplanned
+O0235,2025-07-04,F007,Mathura,Cable Fault,120,219,Unplanned
+O0236,2025-08-07,F008,Aligarh,Cable Fault,137,281,Unplanned
+O0237,2025-09-10,F009,Agra Urban,Cable Fault,154,343,Unplanned
+O0238,2025-10-13,F010,Agra Rural,Cable Fault,171,405,Unplanned
+O0239,2025-11-16,F011,Mathura,Cable Fault,188,467,Unplanned
+O0240,2025-12-19,F012,Aligarh,Cable Fault,35,529,Unplanned
