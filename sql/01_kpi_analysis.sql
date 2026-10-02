@@ -1,6 +1,6 @@
--- Core KPI analysis
+-- Base questions for the distribution report.
 
--- 1. Monthly feeder loss
+-- 1. How is loss moving across divisions?
 SELECT
     month,
     division,
@@ -16,32 +16,34 @@ GROUP BY month, division
 ORDER BY month, division;
 
 
--- 2. Feeder ranking by average loss
+-- 2. Which feeders have the highest average loss?
 SELECT
     feeder_id,
     feeder_name,
     division,
-    ROUND(AVG(
-        100.0 * (energy_input_kwh - energy_billed_kwh)
-        / NULLIF(energy_input_kwh, 0)
-    ), 2) AS avg_loss_pct
+    ROUND(
+        AVG(
+            100.0 * (energy_input_kwh - energy_billed_kwh)
+            / NULLIF(energy_input_kwh, 0)
+        ), 2
+    ) AS avg_loss_pct
 FROM feeder_performance
 GROUP BY feeder_id, feeder_name, division
 ORDER BY avg_loss_pct DESC;
 
 
--- 3. Transformer loading
+-- 3. What does transformer loading look like by division?
 SELECT
     division,
     ROUND(AVG(avg_load_pct), 2) AS avg_loading_pct,
     ROUND(MAX(avg_load_pct), 2) AS peak_recorded_loading_pct,
-    COUNT(*) AS monthly_transformer_records
+    COUNT(DISTINCT transformer_id) AS transformers
 FROM transformer_performance
 GROUP BY division
 ORDER BY avg_loading_pct DESC;
 
 
--- 4. Outage reliability
+-- 4. Which divisions have the highest outage impact?
 SELECT
     division,
     COUNT(*) AS outage_count,
@@ -52,7 +54,7 @@ GROUP BY division
 ORDER BY customers_affected DESC;
 
 
--- 5. Revenue collection
+-- 5. Where is the collection gap?
 SELECT
     month,
     division,
