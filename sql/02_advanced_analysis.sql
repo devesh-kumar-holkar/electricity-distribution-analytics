@@ -1,6 +1,6 @@
--- Advanced analysis using CTEs and window functions
+-- A few follow-up questions after the base KPI review.
 
--- 1. Monthly trend with previous-month loss
+-- 1. Did the overall loss rate change from the previous month?
 WITH monthly AS (
     SELECT
         month,
@@ -12,9 +12,12 @@ WITH monthly AS (
 trend AS (
     SELECT
         month,
-        100.0 * (input_kwh - billed_kwh) / NULLIF(input_kwh, 0) AS loss_pct,
-        LAG(100.0 * (input_kwh - billed_kwh) / NULLIF(input_kwh, 0))
-            OVER (ORDER BY month) AS previous_loss_pct
+        100.0 * (input_kwh - billed_kwh)
+            / NULLIF(input_kwh, 0) AS loss_pct,
+        LAG(
+            100.0 * (input_kwh - billed_kwh)
+            / NULLIF(input_kwh, 0)
+        ) OVER (ORDER BY month) AS previous_loss_pct
     FROM monthly
 )
 SELECT
@@ -26,7 +29,7 @@ FROM trend
 ORDER BY month;
 
 
--- 2. Persistent high-loss feeders
+-- 2. Which feeders repeatedly cross the 12% loss review line?
 WITH feeder_monthly AS (
     SELECT
         feeder_id,
@@ -36,25 +39,20 @@ WITH feeder_monthly AS (
         100.0 * (energy_input_kwh - energy_billed_kwh)
             / NULLIF(energy_input_kwh, 0) AS loss_pct
     FROM feeder_performance
-),
-flagged AS (
-    SELECT *,
-        CASE WHEN loss_pct >= 12 THEN 1 ELSE 0 END AS high_loss_flag
-    FROM feeder_monthly
 )
 SELECT
     feeder_id,
     feeder_name,
     division,
-    SUM(high_loss_flag) AS high_loss_months,
+    SUM(CASE WHEN loss_pct >= 12 THEN 1 ELSE 0 END) AS high_loss_months,
     ROUND(AVG(loss_pct), 2) AS avg_loss_pct
-FROM flagged
+FROM feeder_monthly
 GROUP BY feeder_id, feeder_name, division
-HAVING SUM(high_loss_flag) >= 6
+HAVING SUM(CASE WHEN loss_pct >= 12 THEN 1 ELSE 0 END) >= 6
 ORDER BY high_loss_months DESC, avg_loss_pct DESC;
 
 
--- 3. Outage reason contribution
+-- 3. Which outage reasons account for most customer impact?
 WITH reason_summary AS (
     SELECT
         reason,
@@ -71,20 +69,22 @@ SELECT
     customers_affected,
     ROUND(
         100.0 * customers_affected
-        / SUM(customers_affected) OVER (), 2
+        / NULLIF(SUM(customers_affected) OVER (), 0), 2
     ) AS customer_impact_share_pct
 FROM reason_summary
 ORDER BY customers_affected DESC;
 
 
--- 4. Joint operational review: loss + reliability
+-- 4. Which feeders have both loss and outage activity?
 WITH loss AS (
     SELECT
         feeder_id,
-        ROUND(AVG(
-            100.0 * (energy_input_kwh - energy_billed_kwh)
-            / NULLIF(energy_input_kwh, 0)
-        ), 2) AS avg_loss_pct
+        ROUND(
+            AVG(
+                100.0 * (energy_input_kwh - energy_billed_kwh)
+                / NULLIF(energy_input_kwh, 0)
+            ), 2
+        ) AS avg_loss_pct
     FROM feeder_performance
     GROUP BY feeder_id
 ),
