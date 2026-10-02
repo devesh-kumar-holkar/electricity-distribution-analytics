@@ -1,8 +1,8 @@
-# Power BI DAX Measures
+# Power BI measures
 
-Assume the main tables are named exactly like the CSV files.
+These are the measures used for the utility report. Percentage measures should be formatted as percentages in Power BI.
 
-## Energy Loss
+## Energy
 
 ```DAX
 Total Input Energy =
@@ -24,7 +24,7 @@ Energy Loss % =
 DIVIDE([Energy Loss], [Total Input Energy])
 ```
 
-## Revenue
+## Collections
 
 ```DAX
 Billed Revenue =
@@ -46,7 +46,7 @@ Collection Efficiency % =
 DIVIDE([Collected Revenue], [Billed Revenue])
 ```
 
-## Reliability
+## Outages
 
 ```DAX
 Outage Count =
@@ -63,7 +63,7 @@ Average Outage Duration =
 AVERAGE(outages[duration_minutes])
 ```
 
-## Asset loading
+## Transformer loading
 
 ```DAX
 Average Transformer Loading % =
@@ -78,4 +78,4 @@ CALCULATE(
 )
 ```
 
-Format percentage measures as percentages and currency measures as INR.
+The 85% figure is a portfolio review threshold used to flag records for investigation. It is not being presented as an official utility operating limit.
