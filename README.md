@@ -1,117 +1,119 @@
 # Electricity Distribution Analytics
 
-An end-to-end **Data Analyst portfolio project** built around a fictional electricity distribution utility.
+I built this project around a simple utility-operations question:
 
-The project focuses on operational reporting and business analysis using **Python, SQL and Power BI** — no machine learning.
+**Where are distribution losses and reliability problems showing up, and what should an operations team look at first?**
 
-## Business questions
+The dataset is synthetic, but the tables are structured like a small distribution reporting system. The analysis uses feeder performance, transformer loading, outage records and consumer billing data.
 
-- Which feeders have consistently high energy losses?
-- How do distribution losses vary by division and month?
-- Which transformers are operating close to their capacity?
-- What are the main causes of outages and how many customers are affected?
-- How efficiently is billed revenue being collected?
-- Which areas deserve operational attention based on loss, reliability and asset-loading indicators?
+There is no machine learning in this project.
 
-## Tech stack
+## What I looked at
 
-- **Python:** Pandas, NumPy, Matplotlib
-- **SQL:** CTEs, aggregations, window functions, ranking and trend analysis
-- **Power BI:** KPI cards, trend analysis, drill-downs and operational dashboards
-- **Excel:** useful for ad-hoc validation and management reporting
+- feeder-wise energy loss
+- loss movement over the year
+- transformer loading
+- outage frequency and duration
+- customers affected by outages
+- billed vs collected revenue
+- feeders that repeatedly show high losses
 
-## Dataset
+The idea is to combine the operational pieces instead of treating loss, outages and billing as separate dashboards.
 
-The repository contains synthetic portfolio data representing 2025 operations:
+## Tools
 
-- 12 feeders across 4 divisions
-- 24 distribution transformers
+- **Python / Pandas** — data checks and exploratory analysis
+- **SQL** — KPI queries, trends, rankings and CTEs
+- **Power BI** — dashboard design and KPI reporting
+- **Excel** — optional checks and ad-hoc reporting
+
+## Data
+
+The sample represents 2025 and contains:
+
+- 12 feeders
+- 4 distribution divisions
+- 24 transformers
 - 240 outage records
 - 1,200 consumer billing records
-- Monthly feeder and transformer performance
 
-The data is **synthetic and created for portfolio/learning purposes**. It is not official utility data.
+The data is synthetic and intended only for portfolio/learning use. It is not official utility data.
 
-## Key KPIs
+## Main questions
+
+### Losses
+Which feeders have the highest average loss? Is a high loss a one-month issue or something that keeps appearing?
+
+### Reliability
+Which outage reasons account for the most customer impact? Are some feeders seeing both higher losses and more outages?
+
+### Assets
+Which divisions have higher transformer loading, and which transformers repeatedly cross the 85% review threshold?
+
+### Collections
+Where is the gap between billed and collected revenue concentrated?
+
+## Key calculations
 
 **Energy Loss %**
-`(Energy Input - Energy Billed) / Energy Input * 100`
+
+`(energy input - energy billed) / energy input`
 
 **Collection Efficiency %**
-`Amount Collected / Billed Amount * 100`
+
+`amount collected / billed amount`
+
+**Collection Gap**
+
+`billed amount - collected amount`
 
 **Transformer Loading %**
-Average operating load as a percentage of transformer capacity.
 
-**Average Outage Duration**
-Average outage duration in minutes.
+Taken from the recorded average loading field in the transformer table.
 
 **Customer Impact**
-Total customers affected by recorded outages.
 
-## Dashboard structure
+Sum of customers affected by recorded outages.
 
-### 1. Executive Overview
-- Total energy input
-- Energy billed
-- Loss %
-- Collection efficiency
-- Customer impact
-- Monthly loss trend
+## Dashboard
 
-### 2. Feeder Loss Analytics
-- Feeder ranking
-- Division comparison
-- Monthly loss trend
-- Persistent high-loss feeders
-- Input vs billed energy
+The Power BI plan is split into four pages:
 
-### 3. Reliability & Asset Performance
-- Outage count
-- Average outage duration
-- Customers affected
-- Outage reason contribution
-- Transformer loading
+1. **Overview** — loss, collection and reliability KPIs
+2. **Feeder Loss** — feeder ranking and monthly loss movement
+3. **Reliability & Assets** — outages, customer impact and transformer loading
+4. **Revenue & Collection** — billed, collected and collection gap
 
-### 4. Revenue & Collection
-- Billed amount
-- Amount collected
-- Collection efficiency
-- Revenue collection gap
-- Division and consumer-segment comparison
+The dashboard notes explain what each page is supposed to answer rather than prescribing a fixed set of charts.
 
-## Repository structure
+## Repository
 
 ```text
-electricity-distribution-analytics/
-├── data/
-│   ├── feeder_performance.csv
-│   ├── transformer_performance.csv
-│   ├── outages.csv
-│   └── consumer_billing.csv
-├── python/
-│   └── eda_and_quality_checks.py
-├── sql/
-│   ├── 00_schema.sql
-│   ├── 01_kpi_analysis.sql
-│   └── 02_advanced_analysis.sql
-├── powerbi/
-│   ├── DAX_MEASURES.md
-│   └── DASHBOARD_BLUEPRINT.md
-├── DATA_DICTIONARY.md
-├── requirements.txt
-└── README.md
+data/
+├── feeder_performance.csv
+├── transformer_performance.csv
+├── outages.csv
+└── consumer_billing.csv
+
+python/
+└── eda_and_quality_checks.py
+
+sql/
+├── 00_schema.sql
+├── 01_kpi_analysis.sql
+└── 02_advanced_analysis.sql
+
+powerbi/
+├── DAX_MEASURES.md
+└── DASHBOARD_BLUEPRINT.md
+
+DATA_DICTIONARY.md
+requirements.txt
+README.md
 ```
 
-## How to use
+## Workflow
 
-1. Load the CSV files into a SQL database or Power BI.
-2. Run `python/eda_and_quality_checks.py` for basic validation and exploratory analysis.
-3. Use the SQL scripts for KPI and deeper operational analysis.
-4. Build the four Power BI pages using the dashboard blueprint and DAX measures.
+**Check the source tables → calculate the base KPIs → investigate recurring problem areas → compare operational indicators → build the report.**
 
-## Analyst workflow demonstrated
-
-**Raw operational data → data quality checks → KPI calculation → SQL analysis → dashboard-ready insights → management reporting**
-
-> Note: This is an analytics project, not an ML model. The goal is to demonstrate practical business analysis, data preparation, SQL and dashboard thinking.
+The project is intentionally closer to an analyst's reporting workflow than to a machine-learning project.
